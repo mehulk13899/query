@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.person {
+  display: block;
+  text-align: left;
+}
+
+.person.user {
+  color: rgb(0, 87, 145);
+}
+
+.person.system {
+  color: #9e4500;
+}
+
+.message {
+  font-size: 18px;
+  display: block;
+  text-align: left;
+}
+.comment-del-icon:hover {
+  color: red;
+  transform: scale(1.2);
+}
+/* pre {
+  font-family: "sans-serif";
+} */
+.date {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 370;
+}
+
+.comment-text {
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: -webkit-pre-wrap; /* Chrome & Safari */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: pre-wrap; /* CSS3 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  white-space: normal;
+}
+
+.comment-date {
+  font-size: 14px;
+  font-weight: 370;
+}
+
+.paper {
+  margin: 10px;
+}
+
+.user-message {
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: none !important;
+}
+
+.system-message {
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: none !important;
+}
+
+.conversation-grid {
+  margin: 8px;
+}
+
+.details-grid {
+  margin: 10px;
+}
+
+.mob-no {
+  float: right;
+}
+
+.ticket-id {
+  float: left;
+}
+
+.div-input {
+  align-items: center;
+  margin: 10px;
+}
+
+.no-user {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.comments-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  max-height: 450px;
+}
+
+.comment-box {
+  margin-bottom: 10px;
+  max-height: 250px;
+  min-height: 30px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 767px) {
+  .mob-no {
+    float: none;
+  }
+
+  .ticket-id {
+    float: none;
+  }
+
+  .message-date {
+    width: 80%;
+  }
+
+  .comments-container {
+    position: static;
+    margin: 10px;
+  }
+
+  .ticket-date {
+    float: left !important;
+  }
+}
